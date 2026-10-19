@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#10131B</color>
+    <color name="pad_background">#202635</color>
+    <color name="white">#FFFFFF</color>
+    <color name="purple">#8B5CF6</color>
+    <color name="pink">#EC4899</color>
+    <color name="cyan">#06B6D4</color>
+    <color name="teal">#14B8A6</color>
+    <color name="orange">#F59E0B</color>
+    <color name="blue">#60A5FA</color>
+    <color name="crash_orange">#F97316</color>
+    <color name="lime">#A3E635</color>
+</resources>

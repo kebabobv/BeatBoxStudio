@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BEATBOX STUDIO"
+            android:textColor="@color/white"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TAP TO PLAY"
+            android:textColor="@color/cyan"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:paddingBottom="22dp" />
+
+        <!-- Prima riga -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="170dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/pad_background"
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/padKick">
+
+                <ImageView
+                    android:id="@+id/imgKick"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/kick"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Kick" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KICK"
+                    android:textColor="@color/purple"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:paddingTop="8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="170dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/pad_background"
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/padSnare">
+
+                <ImageView
+                    android:id="@+id/imgSnare"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/snare"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Snare" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SNARE"
+                    android:textColor="@color/pink"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:paddingTop="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Seconda riga -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="170dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/pad_background"
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/padClosedHat">
+
+                <ImageView
+                    android:id="@+id/imgClosedHat"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/hihat_closed"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Closed Hi-Hat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CLOSED HAT"
+                    android:textColor="@color/cyan"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:paddingTop="8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="170dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/pad_background"
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/padOpenHat">
+
+                <ImageView
+                    android:id="@+id/imgOpenHat"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/hihat_open"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Open Hi-Hat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OPEN HAT"
+                    android:textColor="@color/teal"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:paddingTop="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Terza riga -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="170dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/pad_background"
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/padClap">
+
+                <ImageView
+                    android:id="@+id/imgClap"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/clap"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Clap" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CLAP"
+                    android:textColor="@color/orange"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:paddingTop="8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="170dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/pad_background"
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/padTom">
+
+                <ImageView
+                    android:id="@+id/imgTom"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/tom"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Tom" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TOM"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:paddingTop="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Quarta riga -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="170dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/pad_background"
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/padCrash">
+
+                <ImageView
+                    android:id="@+id/imgCrash"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/crash"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Crash" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CRASH"
+                    android:textColor="@color/crash_orange"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:paddingTop="8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="170dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/pad_background"
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/padRim">
+
+                <ImageView
+                    android:id="@+id/imgRim"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/rim"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Rimshot" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RIMSHOT"
+                    android:textColor="@color/lime"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:paddingTop="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
